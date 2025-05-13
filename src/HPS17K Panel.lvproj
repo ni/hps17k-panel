@@ -141,6 +141,7 @@
 				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi"/>
 				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl"/>
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
+				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Fake Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Fake Network Sync.lvclass"/>
 				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Data.lvclass"/>
 				<Item Name="Faults Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Monitor.lvclass"/>
@@ -228,6 +229,7 @@
 				<Item Name="Stream Writer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Stream Writer.lvclass"/>
 				<Item Name="Stream.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Stream.lvclass"/>
 				<Item Name="sub_Random U32.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/sub_Random U32.vi"/>
+				<Item Name="subFile Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/express/express input/FileDialogBlock.llb/subFile Dialog.vi"/>
 				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
