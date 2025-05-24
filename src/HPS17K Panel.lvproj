@@ -73,7 +73,7 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
-			<Item Name="Graph.lvclass" Type="LVClass" URL="../Classes/Graph_class/Graph.lvclass"/>
+			<Item Name="Grapher.lvclass" Type="LVClass" URL="../Classes/Grapher_class/Grapher.lvclass"/>
 			<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger_class/Logger.lvclass"/>
 			<Item Name="Script.lvclass" Type="LVClass" URL="../Script_class/Script.lvclass"/>
 			<Item Name="Streamer.lvclass" Type="LVClass" URL="../Streamer_class/Streamer.lvclass"/>
@@ -307,7 +307,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">22</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS17K-Panel.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K-Panel.exe</Property>
