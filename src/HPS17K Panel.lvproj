@@ -84,6 +84,9 @@
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Support Files" Type="Folder" URL="../Support Files">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Types" Type="Folder" URL="../Types">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
@@ -130,7 +133,7 @@
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Async Interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Interface.lvclass"/>
 				<Item Name="Async Process Wrapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Process Wrapper.lvclass"/>
-				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Async Runner.lvclass"/>
+				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Runner.lvclass"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -152,7 +155,7 @@
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Fake Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Fake Network Sync.lvclass"/>
-				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Faults Data.lvclass"/>
+				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Data.lvclass"/>
 				<Item Name="Faults Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Monitor.lvclass"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
@@ -171,7 +174,7 @@
 				<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
 				<Item Name="Has LLB Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Has LLB Extension.vi"/>
 				<Item Name="Heartbeat Core.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Core.lvlib"/>
-				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Heartbeat Data.lvclass"/>
+				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Data.lvclass"/>
 				<Item Name="Heartbeat Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Monitor.lvclass"/>
 				<Item Name="Heartbeat.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat.lvclass"/>
 				<Item Name="High Resolution Polling Wait.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Polling Wait.vi"/>
@@ -194,15 +197,17 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVStringsAndValuesArrayTypeDef_I16.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVStringsAndValuesArrayTypeDef_I16.ctl"/>
-				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync Data.lvclass"/>
+				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Data.lvclass"/>
 				<Item Name="Network Sync Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Monitor.lvclass"/>
-				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync.lvclass"/>
+				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync.lvclass"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
+				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_BC_client.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/NI_BC_client.lvlib"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
+				<Item Name="NI_MAPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MAPro.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
 				<Item Name="NI_TDMS File Viewer.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/TDMS File Viewer/NI_TDMS File Viewer.lvlib"/>
@@ -236,7 +241,7 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
-				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Setpoint Status Data.lvclass"/>
+				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Data.lvclass"/>
 				<Item Name="Setpoint Status Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Monitor.lvclass"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Simulated Cycler.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Simulated Cycler.lvclass"/>
@@ -301,7 +306,6 @@
 				<Property Name="App_INI_GUID" Type="Str">{166AC028-78DB-47FC-957A-A2EB1FEBD346}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="App_serverType" Type="Int">0</Property>
-				<Property Name="App_winsec.description" Type="Str">http://www.NI.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{0AD7BCB2-6C26-47DF-BA25-78F64DE26EC9}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">HPS17K Panel EXE</Property>
@@ -312,7 +316,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">36</Property>
+				<Property Name="Bld_version.build" Type="Int">39</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS17K-Panel.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K-Panel.exe</Property>
@@ -323,8 +327,11 @@
 				<Property Name="Destination[2].destName" Type="Str">gRPC Libraries</Property>
 				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Libraries</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{894931F9-5D6D-4FBD-B793-FCF4BEFE6AB0}</Property>
+				<Property Name="Destination[3].destName" Type="Str">Profiles</Property>
+				<Property Name="Destination[3].path" Type="Path">../builds/NI_AB_PROJECTNAME/Profiles</Property>
+				<Property Name="DestinationCount" Type="Int">4</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/Support Files/HPS17k_Cabinet-update.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{60E8C7DB-3CEA-42C6-A532-774FDC56FF2D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main HMI.vi</Property>
@@ -341,12 +348,16 @@
 				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Types/HPS17K-Selection.rtm</Property>
 				<Property Name="Source[3].lvfile" Type="Bool">true</Property>
 				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">4</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Support Files/hps17k-profile-example.csv</Property>
+				<Property Name="Source[5].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/Support Files/hps17k-profile-template.csv</Property>
+				<Property Name="SourceCount" Type="Int">6</Property>
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">HPS17K Panel EXE</Property>
-				<Property Name="TgtF_internalName" Type="Str">HPS17K Panel EXE</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">HPS17K Panel</Property>
+				<Property Name="TgtF_internalName" Type="Str">HPS17K Panel</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 NI</Property>
-				<Property Name="TgtF_productName" Type="Str">HPS17K Panel EXE</Property>
+				<Property Name="TgtF_productName" Type="Str">HPS17K Panel</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{DECC64CA-8360-4DC9-A758-6D7CCFA99A64}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">HPS17K-Panel.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
@@ -363,8 +374,8 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K Panel Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.0.0-0_windows_x64.nipkg</Property>
-				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.0.0-1_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_license" Type="Ref">/My Computer/Support Files/LICENSE.rtf</Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -372,7 +383,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">1</Property>
+				<Property Name="PKG_buildNumber" Type="Int">2</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">HPS17K Panel Package</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -419,7 +430,7 @@
 				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
 				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_description" Type="Str">A fully-feature HMI for verifying, controlling, and profiling an HPS17K cycler.</Property>
+				<Property Name="PKG_description" Type="Str">A standalone HMI to control, view, and diagnose the HPS-17000 cycler</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">1</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{DCC0F744-B513-4CA6-9826-CEC07163898A}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">HPS17K Panel</Property>
@@ -429,7 +440,7 @@
 				<Property Name="PKG_displayVersion" Type="Str"></Property>
 				<Property Name="PKG_feedDescription" Type="Str"></Property>
 				<Property Name="PKG_feedName" Type="Str"></Property>
-				<Property Name="PKG_homepage" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/ni/hps17k-panel</Property>
 				<Property Name="PKG_hostname" Type="Str"></Property>
 				<Property Name="PKG_maintainer" Type="Str">NI &lt;bjones@emerson.com&gt;</Property>
 				<Property Name="PKG_output" Type="Path">../builds/HPS17K Panel Package</Property>
