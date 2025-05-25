@@ -130,7 +130,7 @@
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Async Interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Interface.lvclass"/>
 				<Item Name="Async Process Wrapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Process Wrapper.lvclass"/>
-				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Runner.lvclass"/>
+				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Async Runner.lvclass"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Check for Equality.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Check for Equality.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -152,7 +152,7 @@
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Fake Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Fake Network Sync.lvclass"/>
-				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Data.lvclass"/>
+				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Faults Data.lvclass"/>
 				<Item Name="Faults Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Monitor.lvclass"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
@@ -171,7 +171,7 @@
 				<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
 				<Item Name="Has LLB Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Has LLB Extension.vi"/>
 				<Item Name="Heartbeat Core.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Core.lvlib"/>
-				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Data.lvclass"/>
+				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Heartbeat Data.lvclass"/>
 				<Item Name="Heartbeat Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Monitor.lvclass"/>
 				<Item Name="Heartbeat.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat.lvclass"/>
 				<Item Name="High Resolution Polling Wait.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Polling Wait.vi"/>
@@ -190,11 +190,13 @@
 				<Item Name="LV70DateRecToTimeStamp.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/LV70DateRecToTimeStamp.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl"/>
+				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVStringsAndValuesArrayTypeDef_I16.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVStringsAndValuesArrayTypeDef_I16.ctl"/>
-				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Data.lvclass"/>
+				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync Data.lvclass"/>
 				<Item Name="Network Sync Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Monitor.lvclass"/>
-				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync.lvclass"/>
+				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync.lvclass"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_BC_client.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/NI_BC_client.lvlib"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
@@ -203,11 +205,13 @@
 				<Item Name="NI_MABase.lvlib" Type="Library" URL="/&lt;vilib&gt;/measure/NI_MABase.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_SystemLogging.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/SystemLogging/NI_SystemLogging.lvlib"/>
+				<Item Name="NI_TDMS File Viewer.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/TDMS File Viewer/NI_TDMS File Viewer.lvlib"/>
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Parse State Queue_2024__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue_2024__jki_lib_state_machine.vi"/>
 				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
+				<Item Name="Progress Bar Dialog.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/ProgressBar/Progress Bar Dialog.lvclass"/>
 				<Item Name="Qualified Name Array To Single String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Qualified Name Array To Single String.vi"/>
 				<Item Name="Random Number (Range) DBL.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) DBL.vi"/>
 				<Item Name="Random Number (Range) I64.vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range) I64.vi"/>
@@ -232,8 +236,9 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
-				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Data.lvclass"/>
+				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Setpoint Status Data.lvclass"/>
 				<Item Name="Setpoint Status Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Monitor.lvclass"/>
+				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Simulated Cycler.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Simulated Cycler.lvclass"/>
 				<Item Name="Simulated Multicast Reader.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Simulated Multicast Reader.lvclass"/>
 				<Item Name="Simulated Multicast Writer.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Simulated Multicast Writer.lvclass"/>
