@@ -1,4 +1,4 @@
-# HPS17K Panel
+# HPS-17000 Panel
 
 This application supports v1.0.0 and v1.0.1 of the HPS-17000 API.  It provides a standalone HMI to control and validate the HPS-17000 and provide diagnostic feedback.  It was developed with LabVIEW 2023 64-bit.
 
