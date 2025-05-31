@@ -314,8 +314,9 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">37</Property>
+				<Property Name="Bld_version.build" Type="Int">40</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS17K-Panel.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K-Panel.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -326,7 +327,7 @@
 				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Libraries</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{894931F9-5D6D-4FBD-B793-FCF4BEFE6AB0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{5E9022CB-80A7-43BB-B303-32632E3E479B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main HMI.vi</Property>
@@ -365,7 +366,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K Panel Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.0.0-0_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.0.1-0_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -402,7 +403,7 @@
 				<Property Name="PKG_dependencies[2].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[2].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
-				<Property Name="PKG_dependencies[2].MinVersion" Type="Str">25.0.0.49281-0+f129</Property>
+				<Property Name="PKG_dependencies[2].MinVersion" Type="Str">24.8.0.49237-0+f85</Property>
 				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">NI System Configuration Runtime</Property>
 				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-syscfg-runtime</Property>
@@ -452,7 +453,7 @@
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/HPS17K Panel EXE</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">HPS17K Panel</Property>
-				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+				<Property Name="PKG_version" Type="Str">1.0.1</Property>
 			</Item>
 		</Item>
 	</Item>
