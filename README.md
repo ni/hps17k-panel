@@ -1,4 +1,4 @@
-# HPS17K Panel
+# HPS-17000 Panel
 
 This application supports v1.0.0 and v1.0.1 of the HPS-17000 API.  It provides a standalone HMI to control and validate the HPS-17000 and provide diagnostic feedback.  It was developed with LabVIEW 2023 64-bit.
 
@@ -42,6 +42,11 @@ Configure EIS profiles to be executed on the cycler.  After execution is complet
 
 ![image](https://github.com/user-attachments/assets/af02c34d-addf-4634-bd90-bbd8897e761d)
 
+### Profile
+
+Load CSV test profiles to be executed on the cycler with setpoint streams.  Test profiles are limited to 1500 steps in volta-sbrio-1.0.1 and 200 steps in volta-sbrio-1.0.0
+
+![image](https://github.com/user-attachments/assets/c294959e-bbb9-4efd-aaab-9bcedb6c0089)
 
 ### Diagnostics
 
@@ -59,7 +64,7 @@ Diagnose issues with the HPS17K and view additional information from the cycler.
 
 Run the test server and self-test scripts on the HPS17K.
 
-- Run the self test with or without the capacitor voltage reforming procedure
+- Run the self test with or without the capacitor voltage reforming procedure (2 hour test)
 
 ![image](https://github.com/user-attachments/assets/4ecb04e3-e0db-4ab0-b3ac-600ee7c66853)
 
