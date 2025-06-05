@@ -371,7 +371,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2F2B6F4-ED90-4C02-9D23-44DF9B8F1CA2}</Property>
-				<Property Name="Bld_version.build" Type="Int">40</Property>
+				<Property Name="Bld_version.build" Type="Int">44</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HPS17K-Panel.exe</Property>
@@ -423,7 +423,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/HPS17K Panel Package/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.0.1-0_windows_x64.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">hps17k-panel_1.1.0-0_windows_x64.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_packageVersion" Type="Bool">false</Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
@@ -510,7 +510,7 @@
 				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/HPS17K Panel EXE</Property>
 				<Property Name="PKG_sources[0].Type" Type="Str">EXE Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">HPS17K Panel</Property>
-				<Property Name="PKG_version" Type="Str">1.0.1</Property>
+				<Property Name="PKG_version" Type="Str">1.1.0</Property>
 			</Item>
 		</Item>
 	</Item>
