@@ -3,7 +3,7 @@
 This application supports v1.0.1 of the HPS-17000 API.  It provides a standalone HMI to control and validate the HPS-17000 and provide diagnostic feedback.  It was developed with LabVIEW 2023 64-bit.
 
 - 1024x768 touch panel friendly interface
-- Support Single or Multiple Cycler Topology
+- Single or Multiple Cycler Topology
 - TDMS Logging + File Viewer
 - EIS Testing and Report Generation
 
