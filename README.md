@@ -1,27 +1,28 @@
 # HPS-17000 Panel
 
-This application supports v1.0.0 and v1.0.1 of the HPS-17000 API.  It provides a standalone HMI to control and validate the HPS-17000 and provide diagnostic feedback.  It was developed with LabVIEW 2023 64-bit.
+This application supports v1.0.1 of the HPS-17000 API.  It provides a standalone HMI to control and validate the HPS-17000 and provide diagnostic feedback.  It was developed with LabVIEW 2023 64-bit.
 
 - 1024x768 touch panel friendly interface
 - TDMS Logging + File Viewer
+- EIS Testing and Report Generation
 
-### Chart
+## Chart
 
-- View Measurement Stream (UDP) and gRPC (TCP) data
+- View Measurement Stream (UDP / High Speed) and gRPC (TCP / Low Speed) data
 - Pause the live chart to zoom in and analyze waveforms
 - Save the chart data to Excel for viewing later
 
-![image](https://github.com/user-attachments/assets/6940d4d5-9274-4b74-92e5-5d75070026b5)
+![image](https://github.com/user-attachments/assets/43ee1f2a-eb1e-4391-90ea-55660fe47c4e)
 
-### Config
+## Config
 
 - Configure Single or Multi Cycler Network settings
 - Search for HPS17K units on the local network
 - Configure panel-specific settings for graph, logging, and profile execution
 
-![image](https://github.com/user-attachments/assets/f98d9d36-74d9-41f8-88ad-8f0d2a0589c9)
+![image](https://github.com/user-attachments/assets/09c9a0c1-04c2-49cd-afab-a3d748701ee3)
 
-### Control
+## Control
 
 - Manually control setpoints and toggle energization and output
 - Configure cycler modes and ranges
@@ -33,45 +34,54 @@ This application supports v1.0.0 and v1.0.1 of the HPS-17000 API.  It provides a
 
 ![image](https://github.com/user-attachments/assets/6adebcfb-9788-40e5-8a06-d6bb240847e2)
 
-Setpoint slew rates are configurable from the control tab; this is an example trace at 5V/sec voltage setpoint slew rate
-![image](https://github.com/user-attachments/assets/9ef24501-0234-4a7e-a4c9-2907263a00f7)
-
-### EIS
-
-Configure EIS profiles to be executed on the cycler.  After execution is complete, generate corresponding nyquist and bode plots to analyze impedance data.
-
-![image](https://github.com/user-attachments/assets/af02c34d-addf-4634-bd90-bbd8897e761d)
-
-### Profile
-
-Load CSV test profiles to be executed on the cycler with setpoint streams.  Test profiles are limited to 1500 steps in volta-sbrio-1.0.1 and 200 steps in volta-sbrio-1.0.0
-
-![image](https://github.com/user-attachments/assets/c294959e-bbb9-4efd-aaab-9bcedb6c0089)
-
-### Diagnostics
+## Diagnostics
 
 Diagnose issues with the HPS17K and view additional information from the cycler.
 
 - Launch the Volta Monitor script to view additional HPS17K information
 - Launch the FC Sys Inspect script to view PMSIC device health information
 - Get the XC Report from the HPS17K for a comprehensive report of system health
-- Launch the TDMS File Viewer to view saved log files for machines without DIAdem available
+- Launch the TDMS File Viewer to view saved log files for machines without DIAdem/Excel installed
 
-![image](https://github.com/user-attachments/assets/1f0528a9-4ee1-4598-985b-cc7304b9f135)
+![image](https://github.com/user-attachments/assets/11128ab7-2bc8-4261-8951-5ff887b9f520)
 
+## EIS
 
-### Self-Test
+Configure EIS profiles to be executed on the cycler.  After execution is complete, generate corresponding nyquist and bode plots to analyze impedance data.
+
+### EIS Profile View
+![image](https://github.com/user-attachments/assets/d05879c5-c26c-4a53-a21b-3fa048be5b3f)
+
+### EIS Running View
+![image](https://github.com/user-attachments/assets/13dd1cdc-8c2b-4772-bbe2-6b0e7e434ba7)
+
+### EIS Nyquist (Cole-Cole) Plot
+![image](https://github.com/user-attachments/assets/88a369f2-d869-48fa-85cd-7e5e9e74992f)
+
+### EIS Phase (Bode) Plot
+![image](https://github.com/user-attachments/assets/23a8317d-dcc8-463d-a4f3-913915ed606f)
+
+### EIS Phase (Magnitude) Plot
+![image](https://github.com/user-attachments/assets/87d4ae65-3d8a-4d0a-a926-1e4ee4eeeaa4)
+
+## Profile
+
+Load CSV test profiles to be executed on the cycler with setpoint streams.  Test profiles are limited to 1500 steps in volta-sbrio-1.0.1 and 200 steps in volta-sbrio-1.0.0
+
+![image](https://github.com/user-attachments/assets/10493260-29e7-463f-804b-af81bcac087f)
+
+## Self-Test
 
 Run the test server and self-test scripts on the HPS17K.
 
 - Run the self test with or without the capacitor voltage reforming procedure (2 hour test)
 
-![image](https://github.com/user-attachments/assets/4ecb04e3-e0db-4ab0-b3ac-600ee7c66853)
+![image](https://github.com/user-attachments/assets/8c2e001a-bb81-4f5e-9a39-ebbde35a4640)
 
-
-### System
+## System
 
 View system hardware limits, temperatures, and thermal limits of the system (read-only).
 
-![image](https://github.com/user-attachments/assets/8f452172-f104-4589-b4ec-e32312333cb1)
+![image](https://github.com/user-attachments/assets/ab377b9c-0bce-495e-9e01-1eccf3d67521)
+
 
