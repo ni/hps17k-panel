@@ -73,6 +73,7 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
+			<Item Name="DCIR.lvclass" Type="LVClass" URL="../Classes/DCIR_class/DCIR.lvclass"/>
 			<Item Name="EIS.lvclass" Type="LVClass" URL="../Classes/EIS_class/EIS.lvclass"/>
 			<Item Name="Grapher.lvclass" Type="LVClass" URL="../Classes/Grapher_class/Grapher.lvclass"/>
 			<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger_class/Logger.lvclass"/>
