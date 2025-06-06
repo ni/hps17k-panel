@@ -33,7 +33,7 @@ This application supports v1.0.1 of the HPS-17000 API.  It provides a standalone
   * Constant Current
   * Constant Voltage
 
-![image](https://github.com/user-attachments/assets/6adebcfb-9788-40e5-8a06-d6bb240847e2)
+![image](https://github.com/user-attachments/assets/4101475d-2505-446c-8e7b-7e6e95a06982)
 
 ## Diagnostics
 
