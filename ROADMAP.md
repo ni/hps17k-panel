@@ -1,6 +1,7 @@
 # HPS17K Panel - Feature Roadmap
 
 * Support for HPS17K API 2.0 (when available)
+* DCIR Testing and Report Generation
 * Add ability for loading external or previously generated EIS data into algorithm (need peak analysis)
 * Add a "keypad" for improved touch panel interfacing when entering numeric data
 * Improve HTML report formatting for better printing
