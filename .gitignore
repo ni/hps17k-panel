@@ -1,0 +1,41 @@
+# --- Virtual Environments ---
+# Ignore the virtual environment folder, which is typically named venv or .venv
+# This folder is platform-specific and can be very large.
+# Recreate it from requirements.txt instead.
+venv/
+.venv/
+env/
+.env/
+
+# --- Python Cache & Compiled Files ---
+# Ignore the directory Python creates to store compiled bytecode.
+__pycache__/
+# Ignore compiled python files.
+*.pyc
+*.pyo
+*.pyd
+
+# --- Build & Distribution Artifacts ---
+# These folders are created when you build or package your Python project.
+build/
+dist/
+*.egg-info/
+wheels/
+sdist/
+
+# --- IDE & Editor Folders ---
+# Ignore configuration folders for popular editors like VSCode and PyCharm.
+.vscode/
+.idea/
+
+# --- Operating System Files ---
+# Ignore metadata files created by macOS and Windows.
+.DS_Store
+Thumbs.db
+
+# --- Log files ---
+*.log
+
+# --- LabVIEW files ---
+*.lvlps
+*.lvaliases
