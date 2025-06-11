@@ -90,7 +90,7 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Main HMI.vi" Type="VI" URL="../Main HMI.vi"/>
-		<Item Name="Test Load ECM Profile.vi" Type="VI" URL="../Tests/Test Load ECM Profile.vi"/>
+		<Item Name="Test PyBaMM Wrapper.vi" Type="VI" URL="../Tests/Test PyBaMM Wrapper.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="HPS-17000.lvclass" Type="LVClass" URL="/&lt;instrlib&gt;/HPS-17000/HPS-17000.lvclass"/>
