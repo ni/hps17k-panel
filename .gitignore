@@ -39,3 +39,4 @@ Thumbs.db
 # --- LabVIEW files ---
 *.lvlps
 *.lvaliases
+src/HPS17K Panel.aliases
