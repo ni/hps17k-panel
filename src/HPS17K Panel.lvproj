@@ -73,7 +73,7 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
-			<Item Name="DCIR.lvclass" Type="LVClass" URL="../Classes/DCIR_class/DCIR.lvclass"/>
+			<Item Name="Battery.lvclass" Type="LVClass" URL="../Classes/Battery_class/Battery.lvclass"/>
 			<Item Name="EIS.lvclass" Type="LVClass" URL="../Classes/EIS_class/EIS.lvclass"/>
 			<Item Name="Grapher.lvclass" Type="LVClass" URL="../Classes/Grapher_class/Grapher.lvclass"/>
 			<Item Name="Logger.lvclass" Type="LVClass" URL="../Classes/Logger_class/Logger.lvclass"/>
@@ -84,6 +84,9 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Tests" Type="Folder" URL="../Tests">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Types" Type="Folder" URL="../Types">
@@ -133,7 +136,7 @@
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Async Interface.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Interface.lvclass"/>
 				<Item Name="Async Process Wrapper.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Process Wrapper.lvclass"/>
-				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Async Runner.lvclass"/>
+				<Item Name="Async Runner.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Async Runner.lvclass"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
 				<Item Name="Built App File Layout.vi" Type="VI" URL="/&lt;vilib&gt;/AppBuilder/Built App File Layout.vi"/>
@@ -170,7 +173,7 @@
 				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl"/>
 				<Item Name="ex_CorrectErrorChain.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/ex_CorrectErrorChain.vi"/>
 				<Item Name="Fake Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Fake Network Sync.lvclass"/>
-				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Faults Data.lvclass"/>
+				<Item Name="Faults Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Data.lvclass"/>
 				<Item Name="Faults Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Faults Monitor.lvclass"/>
 				<Item Name="Find First Error.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find First Error.vi"/>
 				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi"/>
@@ -192,7 +195,7 @@
 				<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
 				<Item Name="Has LLB Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Has LLB Extension.vi"/>
 				<Item Name="Heartbeat Core.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Core.lvlib"/>
-				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Heartbeat Data.lvclass"/>
+				<Item Name="Heartbeat Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Data.lvclass"/>
 				<Item Name="Heartbeat Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat Monitor.lvclass"/>
 				<Item Name="Heartbeat.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Heartbeat.lvclass"/>
 				<Item Name="High Resolution Polling Wait.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Polling Wait.vi"/>
@@ -200,6 +203,8 @@
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
 				<Item Name="IVI Error Message Builder.vi" Type="VI" URL="/&lt;vilib&gt;/errclust.llb/IVI Error Message Builder.vi"/>
+				<Item Name="JKI_Copy_Add State(s) to Queue.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_goop4.llb/JKI_Copy_Add State(s) to Queue.vi"/>
+				<Item Name="JKI_Copy_Parse State Queue.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_goop4.llb/JKI_Copy_Parse State Queue.vi"/>
 				<Item Name="Librarian File Info In.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File Info In.ctl"/>
 				<Item Name="Librarian File Info Out.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File Info Out.ctl"/>
 				<Item Name="Librarian File List.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Librarian File List.ctl"/>
@@ -216,9 +221,9 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="LVRowAndColumnTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRowAndColumnTypeDef.ctl"/>
 				<Item Name="LVStringsAndValuesArrayTypeDef_I16.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVStringsAndValuesArrayTypeDef_I16.ctl"/>
-				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync Data.lvclass"/>
+				<Item Name="Network Sync Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Data.lvclass"/>
 				<Item Name="Network Sync Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync Monitor.lvclass"/>
-				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Network Sync.lvclass"/>
+				<Item Name="Network Sync.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Network Sync.lvclass"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="NI_AALPro.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALPro.lvlib"/>
 				<Item Name="NI_BC_client.lvlib" Type="Library" URL="/&lt;vilib&gt;/HPS-17000/NI_BC_client.lvlib"/>
@@ -236,12 +241,15 @@
 				<Item Name="nisyscfg.lvlib" Type="Library" URL="/&lt;vilib&gt;/nisyscfg/nisyscfg.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/OccFireType.ctl"/>
+				<Item Name="Open Anaconda Python Session.vi" Type="VI" URL="/&lt;vilib&gt;/Python/Open Anaconda Python Session.vi"/>
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Open Registry Key.vi" Type="VI" URL="/&lt;vilib&gt;/registry/registry.llb/Open Registry Key.vi"/>
 				<Item Name="Open URL in Default Browser (path).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (path).vi"/>
 				<Item Name="Open URL in Default Browser (string).vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser (string).vi"/>
 				<Item Name="Open URL in Default Browser core.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser core.vi"/>
 				<Item Name="Open URL in Default Browser.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/browser.llb/Open URL in Default Browser.vi"/>
+				<Item Name="Open Venv Python Session.vi" Type="VI" URL="/&lt;vilib&gt;/Python/Open Venv Python Session.vi"/>
+				<Item Name="Open Virtual Environment Session.vi" Type="VI" URL="/&lt;vilib&gt;/Python/Open Virtual Environment Session.vi"/>
 				<Item Name="Parse State Queue_2024__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue_2024__jki_lib_state_machine.vi"/>
 				<Item Name="Parse State Queue__jki_lib_state_machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__jki_lib_state_machine.vi"/>
 				<Item Name="Path to URL inner.vi" Type="VI" URL="/&lt;vilib&gt;/printing/PathToURL.llb/Path to URL inner.vi"/>
@@ -285,7 +293,7 @@
 				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="Set VI Library File Info.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Set VI Library File Info.vi"/>
-				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/hps-17000/Setpoint Status Data.lvclass"/>
+				<Item Name="Setpoint Status Data.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Data.lvclass"/>
 				<Item Name="Setpoint Status Monitor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Setpoint Status Monitor.lvclass"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Simulated Cycler.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/HPS-17000/Simulated Cycler.lvclass"/>
