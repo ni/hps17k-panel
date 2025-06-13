@@ -84,7 +84,16 @@
 		<Item Name="Libraries" Type="Folder" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/Libraries">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Python" Type="Folder" URL="../Python">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Support Files" Type="Folder" URL="../Support Files">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="Tests" Type="Folder" URL="../Tests">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Types" Type="Folder" URL="../Types">
