@@ -73,8 +73,9 @@
 		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Classes" Type="Folder">
+			<Item Name="ACIR_EIS.lvclass" Type="LVClass" URL="../Classes/ACIR_EIS_class/ACIR_EIS.lvclass"/>
 			<Item Name="Battery.lvclass" Type="LVClass" URL="../Classes/Battery_class/Battery.lvclass"/>
-			<Item Name="EIS.lvclass" Type="LVClass" URL="../Classes/EIS_class/EIS.lvclass"/>
+			<Item Name="DCIR_HPPC.lvclass" Type="LVClass" URL="../Classes/DCIR_HPPC_class/DCIR_HPPC.lvclass"/>
 			<Item Name="Grapher.lvclass" Type="LVClass" URL="../Classes/Grapher_class/Grapher.lvclass"/>
 			<Item Name="Logger.lvclass" Type="LVClass" URL="../Classes/Logger_class/Logger.lvclass"/>
 			<Item Name="Script.lvclass" Type="LVClass" URL="../Classes/Script_class/Script.lvclass"/>
@@ -84,9 +85,6 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="SubVIs" Type="Folder" URL="../SubVIs">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="Tests" Type="Folder" URL="../Tests">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Types" Type="Folder" URL="../Types">
@@ -341,7 +339,6 @@
 			<Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="HPPC.lvclass" Type="LVClass" URL="../Classes/HPPC_class/HPPC.lvclass"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>

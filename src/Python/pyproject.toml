@@ -1,0 +1,9 @@
+[project]
+name = "hps17k-panel"
+version = "1.0.0"
+description = "A project for simulating batteries with PyBaMM."
+requires-python = ">=3.9, <3.13"  # Enforces Python 3.9, 3.10, 3.11, or 3.12
+dependencies = [
+    "pybamm==25.6.0",
+    "matplotlib==3.10.3",
+]
