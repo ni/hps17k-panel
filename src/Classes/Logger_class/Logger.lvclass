@@ -1,6 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <LVClass LVVersion="23008000">
-	<Property Name="EndevoGOOP_ClassItemIcon" Type="Str">GreenFull</Property>
+	<Property Name="EndevoGOOP_ClassItemIcon" Type="Str">PurpleFull</Property>
 	<Property Name="EndevoGOOP_ClassProvider" Type="Str">EndevoGOOP400</Property>
 	<Property Name="EndevoGOOP_ColorFrame" Type="UInt">0</Property>
 	<Property Name="EndevoGOOP_ColorHeader" Type="UInt">3524608</Property>
@@ -108,7 +108,7 @@
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">3</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1352671760</Property>
 			<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 		</Item>
 		<Item Name="Logger_GetAttributes.vi" Type="VI" URL="../utils/Logger_GetAttributes.vi">
@@ -118,7 +118,7 @@
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">3</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">8388624</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">278929424</Property>
 			<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 		</Item>
 	</Item>
@@ -180,12 +180,12 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 	<Item Name="Update Log Directory.vi" Type="VI" URL="../Update Log Directory.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;;!!!!#A!I1(!!(A!!%!Z-&lt;W&gt;H:8)O&lt;(:D&lt;'&amp;T=Q!!$(*F:G6S:7ZD:3"J&lt;A!!"!!!!"*!5QV%982B6'^1=G^D:8.T!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!":!5!!$!!-!"!!&amp;#%6S=G^S)%FO!!!I1(!!(A!!%!Z-&lt;W&gt;H:8)O&lt;(:D&lt;'&amp;T=Q!!$8*F:G6S:7ZD:3"P&gt;81!&amp;E"1!!-!!Q!%!!5*28*S&lt;X)A4X6U!*E!]!!5!!!!!1!#!!%!!1!'!!%!!1!"!!%!!1!"!!%!!1!(!!%!!1!"!!%!#!-!!2!!!"!!!!!!!!!!%!!!!!!!!!!!!!!!#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!*!!!6!!!!!!!!!!!!!!!!!!!"!!!!!!!!!!%!#1!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;?!!!!#A!I1(!!(A!!%!Z-&lt;W&gt;H:8)O&lt;(:D&lt;'&amp;T=Q!!$(*F:G6S:7ZD:3"J&lt;A!!"!!!!":!-P````].4'^H)%2J=G6D&gt;'^S?1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!$!!1!"1B&amp;=H*P=C"*&lt;A!!+%"Q!"Y!!"!/4'^H:W6S,GRW9WRB=X-!!!VS:7:F=G6O9W5A&lt;X6U!":!5!!$!!-!"!!&amp;#56S=G^S)%^V&gt;!#:!0!!&amp;!!!!!%!!A!"!!%!"A!"!!%!!1!"!!%!!1!"!!%!"Q!"!!%!!1!"!!A$!!%1!!!1!!!!!!!!!!I!!!!!!!!!!!!!!!I!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!U!!!!!!!!!!!!!!!!!!!!!!!!!$15!&amp;1!!!!!!!!!!!!!!!!!!!1!!!!!!!!!"!!E!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">8</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1082929680</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1082130960</Property>
 	</Item>
 </LVClass>

@@ -80,6 +80,7 @@
 			<Item Name="Logger.lvclass" Type="LVClass" URL="../Classes/Logger_class/Logger.lvclass"/>
 			<Item Name="Script.lvclass" Type="LVClass" URL="../Classes/Script_class/Script.lvclass"/>
 			<Item Name="Streamer.lvclass" Type="LVClass" URL="../Classes/Streamer_class/Streamer.lvclass"/>
+			<Item Name="VCS.lvclass" Type="LVClass" URL="../Classes/VCS_class/VCS.lvclass"/>
 		</Item>
 		<Item Name="Libraries" Type="Folder" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/Libraries">
 			<Property Name="NI.DISK" Type="Bool">true</Property>

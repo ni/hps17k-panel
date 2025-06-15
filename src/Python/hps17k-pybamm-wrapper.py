@@ -75,7 +75,7 @@ class PybammWrapper:
         self.ocv_data = np.array(ocv_data)
         return True
 
-    def configure_simulation(
+    def load_simulation(
         self,
         num_rc_pairs: int = 1,
         R0: float = 0.0015,
@@ -109,50 +109,25 @@ class PybammWrapper:
                     "R2 [Ohm]": R2,
                     "C2 [F]": C2,
                 })
-            model = pybamm.equivalent_circuit.Thevenin(
+            self.model = pybamm.equivalent_circuit.Thevenin(
                 options={"number of rc elements": num_rc_pairs}
             )
-            param = model.default_parameter_values
-            param.update(ecm_params_to_add, check_already_exists=False)
-            return model, param
+            self.param = self.model.default_parameter_values
+            self.param.update(ecm_params_to_add, check_already_exists=False)
+            # Find max SoC where OCV <= upper_voltage_cutoff
+            socs = np.array(self.soc_data)
+            ocvs = np.array(self.ocv_data)
+            valid = np.where(ocvs <= upper_voltage_cutoff)[0]
+            if len(valid) == 0:
+                initial_soc = float(socs[np.argmin(np.abs(ocvs - upper_voltage_cutoff))])
+            else:
+                initial_soc = float(socs[valid[-1]])
+            self.model.initial_conditions[pybamm.Variable("SoC")] = pybamm.Scalar(initial_soc)
+            self.initial_soc = initial_soc  # Store for reference
+            return True
         except Exception as e:
             print(f"Error configuring ECM simulation: {e}")
-            return None, None
-
-    def load_simulation(
-        self,
-        num_rc_pairs: int = 1,
-        R0: float = 0.0015,
-        R1: float = 0.001,
-        C1: float = 2500.0,
-        R2: float = 0.0008,
-        C2: float = 40000.0,
-        nominal_capacity_Ah: float = 5.0,
-        upper_voltage_cutoff: float = 4.2,
-        lower_voltage_cutoff: float = 3.0,
-        **kwargs
-    ):
-        """
-        Configure ECM simulation parameters.
-        """
-        if self.soc_data is None or self.ocv_data is None:
-            print("No OCV/SOC curve loaded. Please call load_ocv_soc_curve or load_model first.")
             return False
-        self.model, self.param = self.configure_simulation(
-            num_rc_pairs=num_rc_pairs,
-            R0=R0,
-            R1=R1,
-            C1=C1,
-            R2=R2,
-            C2=C2,
-            nominal_capacity_Ah=nominal_capacity_Ah,
-            upper_voltage_cutoff=upper_voltage_cutoff,
-            lower_voltage_cutoff=lower_voltage_cutoff,
-        )
-        self.simulation = None
-        self.solution = None
-        self.model_type = "ECM"
-        return self.model is not None and self.param is not None
 
     def step_simulation(self, current_A, time_step_s):
         if self.model is None or self.param is None:
@@ -163,7 +138,8 @@ class PybammWrapper:
                 parameter_values=self.param,
                 output_variables=self.output_vars
             )
-            self.simulation.solve([0, 1e-6], inputs={"Current [A]": current_A})
+            # Set initial SoC to 1.0 (100%)
+            self.simulation.solve([0, 1e-6], inputs={"Current [A]": current_A, "SoC": 1.0})
         self.simulation.step(dt=time_step_s, save=True, inputs={"Current [A]": current_A})
         self.solution = self.simulation.solution
         return float(self.solution[self.voltage_var].entries[-1])
@@ -190,7 +166,7 @@ class PybammWrapper:
             print(f"Error interpolating SoC from OCV curve: {e}")
             return -1.0
 
-    def get_ocv_soc_curve(self):
+    def get_soc_ocv_curve(self):
         if self.soc_data is None or self.ocv_data is None:
             return '{"error": "No OCV/SOC curve loaded."}'
         soc_points = np.linspace(0, 1, 101)
@@ -263,11 +239,11 @@ def load_model(
         model_type=model_type
     )
 
-def load_ocv_soc_curve(obj, soc_data, ocv_data):
+def load_soc_ocv_curve(obj, soc_data, ocv_data):
     """
-    Expose load_ocv_soc_curve for LabVIEW.
+    Expose load_soc_ocv_curve for LabVIEW.
     """
-    return obj.load_ocv_soc_curve(soc_data, ocv_data)
+    return obj.load_soc_ocv_curve(soc_data, ocv_data)
 
 def load_simulation(
     obj,
@@ -316,11 +292,11 @@ def get_soc(obj):
     """
     return obj.get_soc()
 
-def get_ocv_soc_curve(obj):
+def get_soc_ocv_curve(obj):
     """
-    Expose get_ocv_soc_curve for LabVIEW.
+    Expose get_soc_ocv_curve for LabVIEW.
     """
-    return obj.get_ocv_soc_curve()
+    return obj.get_soc_ocv_curve()
 
 def reset_simulation(obj):
     """
@@ -360,7 +336,7 @@ if __name__ == '__main__':
     wrapper = PybammWrapper()
     print("Loading OCV/SOC curve from SPMe model...")
     success = wrapper.load_model(chemistry="Chen2020", model_type="SPMe")
-    print(f"OCV/SOC curve load successful: {success}")
+    print(f"SOC/OCV curve load successful: {success}")
     print("-" * 20)
 
     print("Configuring ECM simulation...")
@@ -369,7 +345,7 @@ if __name__ == '__main__':
     print("-" * 20)
 
     if success and sim_success:
-        ocv_data_json = wrapper.get_ocv_soc_curve()
+        ocv_data_json = wrapper.get_soc_ocv_curve()
         print(f"Generated OCV Curve: {ocv_data_json}")
         print("-" * 20)
 
