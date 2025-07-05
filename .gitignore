@@ -17,6 +17,7 @@ __pycache__/
 
 # --- Build & Distribution Artifacts ---
 # These folders are created when you build or package your Python project.
+builds/
 build/
 dist/
 *.egg-info/
